@@ -20,9 +20,9 @@ public class SpringbootmvcApplication {
 	@Bean
 	public Executor taskExecutor() {
 		ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-		executor.setCorePoolSize(1);
-		executor.setMaxPoolSize(2);
-		executor.setQueueCapacity(20);
+		executor.setCorePoolSize(5);
+		executor.setMaxPoolSize(10);
+		executor.setQueueCapacity(50);
 		executor.setThreadNamePrefix("GithubLookup-");
 		executor.initialize();
 		return executor;
