@@ -24,6 +24,9 @@ public class EmployeeController {
 
     //Async test
     //Reference: https://spring.io/guides/gs/async-method/
+    //https://www.baeldung.com/spring-async
+    /*When a method return type is a Future, exception handling is easy – Future.get() method will throw the exception.
+    But, if the return type is void, exceptions will not be propagated to the calling thread. Hence we need to add extra configurations to handle exceptions.*/
     @GetMapping(path = "/getAllEmployees")
     @ResponseBody
     public List<Employee> getAllEmployees () throws Exception {
