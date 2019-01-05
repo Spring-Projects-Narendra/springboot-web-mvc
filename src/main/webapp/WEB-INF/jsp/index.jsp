@@ -7,5 +7,7 @@
 <body>
     Employee Home
 
+    <a href="/getAllEmployees">Get All Employee</a>
+
 </body>
 </html>

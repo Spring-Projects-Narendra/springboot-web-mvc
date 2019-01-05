@@ -7,6 +7,11 @@ public class Employee {
     private String gender;
     private String address;
 
+    public Employee(Integer empId, String empName) {
+        this.empId = empId;
+        this.empName = empName;
+    }
+
     public Integer getEmpId() {
         return empId;
     }
